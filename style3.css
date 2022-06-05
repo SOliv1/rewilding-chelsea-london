@@ -1,4 +1,4 @@
-
+  
 @import url('https://fonts.googleapis.com/css?family=Oswald|Lato:300');
 
 *{
@@ -20,6 +20,17 @@ h1, h2{
     letter-spacing: 4px;
     color: #252525;
 }
+
+
+
+/* Cover Link*/
+
+.active .menu-item {
+    border-bottom: 1px solid #3a3a3a;
+    color: #fff;
+    text-decoration-skip-ink: none;
+}
+
 
 #logo{
     float: left;
@@ -55,6 +66,8 @@ h1, h2{
 
 .active{
     border-bottom: 1px solid #3a3a3a;
+    text-decoration: none;
+    
 }
 
 /* Hero image and cover text */
@@ -66,15 +79,16 @@ h1, h2{
     position: relative;
 }
 
-#hero-image {
-    height: 600px;
+#hero-image{
+    height:600px;
     width: 100%;
-    background: url("images/Chelsea-bumble.jpeg") no-repeat center center;
+    background: url("../images/two-butterflies.jpeg") no-repeat center center;
 
     /* Animates zoom effect on loading the page */
     animation-name: hero-zoom;
     animation-duration: 5s;
     animation-fill-mode: forwards;
+        background-size: cover;
 }
 
 /* Creates the level of zoom for hero image */
@@ -97,25 +111,39 @@ h1, h2{
     text-transform: uppercase;
     letter-spacing: 4px;
 
-    width: 300px;
-    height: 200px;
+    width: 350px;
+    height: 250px;
 
-    padding-top: 40px;
+    padding-top: 20px;
     padding-left: 10px;
-
-    background-color: rgba(241, 109, 107, .7);
-
-    bottom: 30px;
+    background-color: rgba(107, 210, 241, 0.38);
+    bottom: 90px;
     right: 150px;
 
     position: absolute;
 
 }
 
-/* Club ethos */
+/* button success */
+
+.btn-success {
+    color: #000;
+    background-color: hsla(120,100%,40%,0.3);
+    border-color: #28a745;
+}
+
+/*
+.btn-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+
+ Club ethos */
 
 #club-ethos{
-    height: 600px;
+    min-height: 600px;
 }
 
 #left-about{
@@ -133,6 +161,8 @@ h1, h2{
 #center-about {
     width: 33%;
     margin: 0 auto;
+    background-color: hsla(120,100%,40%,0.3);
+    border-color: #28a745;
 }
 
 hr {
@@ -147,6 +177,32 @@ hr {
     line-height: 20px;
     clear: both;
     margin-bottom: 50px;
+}
+
+i#fa-download {
+    color: #000000;
+}
+/* download links for schools */
+
+a#schools a#phenology  {
+    color:rgb(148, 0, 211);
+    font-weight: 700;
+}
+
+span#bold {
+    color: darkviolet;
+    font-weight: bold;
+}
+
+a:not([href]):not([tabindex]) {
+    color: rgb(148, 0, 211);
+    text-decoration: none;
+}
+
+span#download-left {
+    color: black;
+    font-display: bold;
+    font-weight: 700;
 }
 
 .right-about-heading {
@@ -185,19 +241,22 @@ hr {
 }
 
 #circle-cover-bg {
-    background: url('../images/plant-seeds1.jpeg') no-repeat center center;
-    height: 100%;
-    border-radius: 50%;
-}
-#circle-cover-bg-1 {
     background: url('../images/seedgrowing.jpeg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
+    background-size: cover;
+}
+#circle-cover-bg-1 {
+    background: url('../images/plant-seeds1.jpeg') no-repeat center center;
+    height: 100%;
+    border-radius: 50%;
+    background-size: cover;
 }
 #circle-cover-bg-2 {
     background: url('../images/plantseeds.jpeg') no-repeat center center;
     height: 100%;
     border-radius: 50%;
+    background-size: cover;
 }
 
 /* Event times */
@@ -236,7 +295,7 @@ hr {
     position: relative;
 }
 
-footer{
+.footer{
     height: 150px;
 }
 
@@ -294,6 +353,7 @@ footer{
     margin-bottom: 20px;
 }
 
+
 .text-input {
     background: transparent;
     color: #fafafa;
@@ -323,6 +383,14 @@ footer{
     background-color: #fafafa;
     color: #f16c6b;
 }
+
+/*Buttons - News */
+.btn-primary {
+    color: #fff;
+    background-color: #c480c5; 
+    border-color: #c480c5; 
+       
+    }
 
 /* Media queries */
 
@@ -364,13 +432,23 @@ footer{
     }
 }
 
+/* blog titles */
+
+h3#cover-title {
+    color: #ffffff;
+}
+
+h3#cover-title {
+    color: #fff;
+}
+
 /* For medium screens sizes from 950px wide and down */
 @media screen and (max-width: 950px){
 
     #menu{
         clear: left;
         float: left;
-        margin-left: 30px;
+        margin-left: 30px; 
         margin-bottom: 20px;
         line-height: 25px;
     }
@@ -410,3 +488,17 @@ footer{
         column-count: 2;
     }
 }
+
+/* media only screen max width 480px */
+@media only screen and (max-width: 480px) {
+    body {
+        font-size: 12px;
+        .page-title {
+            width: 270px;
+          }
+
+    }
+  
+    
+)
+
